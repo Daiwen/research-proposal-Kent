@@ -27,19 +27,29 @@
 
 %%%%%%%%%%%%%%%% Body %%%%%%%%%%%%%%%%
 \section*{Context}
-
-Functional programming is a domain of programming languages based on
-lambda calculus. This mathematical abstraction can be shown to be
-equivalent to combinatory logic. Consequently the programs written
-with the functional paradigm can be proven more easily than with other
+One way of improving the development process of a program is to use
+modularity. Coding small modules is quicker and easier, moreover the
+tests can be performed on each module individually, making the
+debugging process more efficient. Once coded and tested a module can
+theoritically be reused in subsequent development, reducing the
+development time of later programs. In the functional paradigm, the
+possibility for function arguments to be fixed in order to create new
+functions, allows the coding of generic modules and functions.
+This increases the potential of reusability. On top of that the lazy
+evaluation used in certain languages strengthens the potential for
+modularity by permitting a structure "generator >> selector", where
+one module generates data and a second selects them. In a nutshell,
+functional programming promotes software modularity
+\citep{hughes_why_1989}, increasing the code readability and
+reusability. It is a domain of programming languages based on lambda
+calculus. This mathematical abstraction can be shown to be equivalent
+to combinatory logic. Consequently the programs written with the
+functional paradigm can be proven more easily than with other
 paradigms \citep{wadler_theorems_1989,voigtlander_proving_2008}. This
 is a highly desirable property; it means that a program can be proven
-to do what it is expected to. Functional programming, because of its
-higher-order functions and lazy evaluation, also promotes software
-modularity \citep{hughes_why_1989}, increasing the code readability
-and reusability. This paradigm is more and more used in industry, but
-unlike the object paradigm, for instance, it lacks a unified design
-methodology to assist the software
+to do what it is expected to.  This paradigm is more and more used in
+industry, but unlike the object paradigm, for instance, it lacks a
+unified design methodology to assist the software
 development. \citet{russell_FAD_2001} tried to give the community a
 tool similar to UML but dedicated to the functional paradigm. This
 approach, however, seems not to have convinced the programmers. One
